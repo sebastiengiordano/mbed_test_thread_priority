@@ -67,6 +67,47 @@ void HAL::dark(){
     led_blue(Disable);
 }
 
+void HAL::red_light(){
+    this->led_red(Enable, 65);
+    this->led_green(Disable);
+    this->led_blue(Disable);
+}
+
+void HAL::green_light(){
+    this->led_red(Disable);
+    this->led_green(Enable, 65);
+    this->led_blue(Disable);
+}
+
+void HAL::orange_light(){
+    this->led_red(Enable, ORANGE_RED_COMPONENT);
+    this->led_green(Enable, ORANGE_GREEN_COMPONENT);
+}
+
+void HAL::cyan_light(){
+    this->led_red(Disable);
+    this->led_green(Enable, 65);
+    this->led_blue(Enable, 65);
+}
+
+void HAL::purple_light(){
+    this->led_red(Enable, 65);
+    this->led_green(Disable);
+    this->led_blue(Enable, 65);
+}
+
+void HAL::blue_light(){
+    this->led_red(Disable);
+    this->led_green(Disable);
+    this->led_blue(Enable, 65);
+}
+
+void HAL::white(){
+    this->led_red(Enable, 65);
+    this->led_green(Enable, 65);
+    this->led_blue(Enable, 65);
+}
+
 
 /******************/
 /* Private method */

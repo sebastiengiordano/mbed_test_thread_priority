@@ -21,6 +21,12 @@ class HAL{
 
         /* Backlight */ 
         void dark();
+        void red_light();
+        void green_light();
+        void orange_light();
+        void cyan_light();
+        void purple_light();
+        void blue_light();
 
     private:
 
