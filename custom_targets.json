@@ -1,0 +1,37 @@
+{
+    "BMS3": {
+        "detect_code": ["0456"],
+        "device_has_add": ["SERIAL_ASYNCH", "FLASH", "MPU"],
+        "release_versions": ["5"],
+        "bootloader_supported": false,
+        "device_has_remove": [
+            "ANALOGOUT",
+            "TRNG",
+            "I2C",
+            "I2CSLAVE",
+            "I2C_ASYNCH",
+            "PORTINOUT",
+            "PORTOUT",
+            "SPI",
+            "SPISLAVE",
+            "SPI_ASYNCH",
+            "STDIO_MESSAGES",
+            "SERIAL_FC"
+        ]
+    },
+    "BMS3_STM32052x8": {
+        "inherits": ["MCU_STM32L0", "BMS3"],
+        "core": "Cortex-M0+",
+        "overrides": {
+            "clock_source": "USE_PLL_HSI",
+            "lpticker_delay_ticks": 0,
+            "lpticker_lptim": 0,
+            "boot-stack-size": "0x100",
+            "lse_available": 0
+        },
+        "extra_labels_add": ["STM32L052x8"],
+        "detect_code": ["0456"],
+        "release_versions": ["5"],
+        "device_name": "STM32L052K8"
+    }
+}
