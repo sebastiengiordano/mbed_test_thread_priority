@@ -2,5 +2,5 @@
 .mbed
 projectfiles
 *.py*
-mbed-os
-BUILD
+mbed-os/
+BUILD/
